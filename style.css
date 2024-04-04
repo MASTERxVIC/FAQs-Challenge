@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+
+}
+.main{
+    height: 35vh; 
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card{
+    background-color: white;
+    box-shadow: 1px 1px 5px hsl(276, 66%, 72%);
+    border-radius: 20px;
+    width: 33vw;
+    margin:0;
+    height: 55vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.top h1{
+    font-family: "WorkSans", sans-serif;
+    font-size:39px;
+    color: hsl(292, 42%, 14%);
+}
+.top img{
+    margin-right: 20px;
+}
+.uni{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid hsl(275, 61%, 79%); /* Add a border line between each question */
+    padding-bottom: 5px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.question h4{
+    font-family: "WorkSans S", sans-serif;
+    color: hsl(292, 42%, 14%);
+    font-size: 16px;
+}
+.question img{
+    margin-right: 10px;
+}
+.answer{
+    font-family: "WorkSans R", sans-serif;
+    font-size: 16px;
+    color:hsl(292, 16%, 49%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+.answer p{
+    margin: 5px;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+}
+
+@font-face {
+    font-family: "WorkSans"; /* Name of the font family */
+    src: url("./assets/fonts/static/WorkSans-Bold.ttf") format("truetype"); /* URL to the font file */
+  }
+@font-face {
+    font-family: "WorkSans R"; /* Name of the font family */
+    src: url("./assets/fonts/static/WorkSans-Regular.ttf") format("truetype"); /* URL to the font file */
+  }
+@font-face {
+    font-family: "WorkSans S"; /* Name of the font family */
+    src: url("./assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype"); /* URL to the font file */
+  }
+
