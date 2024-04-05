@@ -1,5 +1,5 @@
 # FAQ
-Here is the live demo of the project [`https://faqs-challenge-chi.vercel.app/`]
+Here is the live demo of the project [https://faqs-challenge-chi.vercel.app/]
  
 # Frontend Mentor - FAQ accordion solution
 
